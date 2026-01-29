@@ -1,3 +1,27 @@
+.lang-switcher-wrap {
+    position: absolute;
+    top: 18px;
+    right: 32px;
+    z-index: 10;
+}
+.lang-switcher {
+    background: var(--panel-bg);
+    color: var(--text-main);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 4px 16px 4px 8px;
+    font-size: 1em;
+    font-family: inherit;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    box-shadow: 0 1px 4px #0002;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+.lang-switcher:focus {
+    border: 1.5px solid var(--accent);
+    box-shadow: 0 2px 8px #00bcd455;
+}
 :root {
     --bg-color: #121212;
     --panel-bg: #1e1e1e;
