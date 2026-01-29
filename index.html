@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaBorderJS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h2>AlphaBorderJS</h2>
+    </div>
+
+    <div class="workspace">
+        <div class="config-panel">
+            <div class="control-group">
+                <label>亮度閾值 (RGB最大值) <span id="disp-thresh" class="value-disp">40</span></label>
+                <input type="range" id="param-threshold" min="0" max="100" value="40">
+            </div>
+
+            <div style="border-bottom: 1px solid var(--border); margin: 5px 0;"></div>
+
+            <div class="control-group">
+                <label>外框寬度 (像素) <span id="disp-stroke" class="value-disp">4</span></label>
+                <input type="range" id="param-stroke" min="0" max="20" value="4">
+            </div>
+
+            <div class="control-group">
+                <label>發光半徑 (像素) <span id="disp-glow" class="value-disp">15</span></label>
+                <input type="range" id="param-glow" min="0" max="60" value="15">
+            </div>
+
+            <div class="control-group">
+                <label>發光顏色</label>
+                <input type="color" id="param-color" value="#ffffff">
+            </div>
+
+            <div id="drop-zone">
+                【拖曳圖片到此】<br>
+                <span style="font-size:0.8em">亮度去背來源（目前支援黑色背景）</span>
+            </div>
+            
+            <div class="actions">
+                <button id="btn-download" disabled>匯出 PNG</button>
+            </div>
+        </div>
+
+        <div class="viewport" id="viewport">
+            <div class="canvas-container">
+                <canvas id="main-canvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <footer style="width:100%;text-align:center;margin-top:24px;color:var(--text-dim);font-size:0.95em;letter-spacing:0.5px;">
+        <a href="https://kageryo.coderyo.com" target="_blank" style="color:inherit;text-decoration:none;">Made by Chien-Hsun Chang With ♥, MIT License</a><br>
+    </footer>
+</body>
+</html>
