@@ -8,7 +8,7 @@ AlphaBorderJS is a simple web tool for generating luma key transparency and glow
 - Custom glow color
 - Live preview
 - Export as PNG (keeps original image size)
-- All UI in Traditional Chinese
+- All UI support Mandarin, English, Japanese
 
 ## Usage
 1. Open `index.html` in your browser (use a local server for best results).
